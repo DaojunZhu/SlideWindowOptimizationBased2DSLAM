@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<launch>
+    <param name="odom_topic" value="slam_data_sim/odom"/>
+    <param name="feature_topic" value="slam_data_sim/observations"/>
+    <param name="odom_x_n" value="0.0001"/>
+    <param name="odom_y_n" value="0.0001"/>
+    <param name="odom_th_n" value="0.3"/>
+    <param name="obs_r_n" value="0.1"/>
+    <param name="obs_th_n" value="0.05"/>
+    <node pkg="slam_2d_sim" type="slam_2d" name="slam_2d" output="screen">
+    </node>
+</launch>
